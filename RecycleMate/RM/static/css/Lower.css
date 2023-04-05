@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Delicious+Handrawn&display=swap');
+
+#intro{
+    min-height: 100vh;
+    background-color: ghostwhite;
+}
+
+.intro1{
+    padding: 70px;
+
+}
+
+.intro1 h1{
+    font-family:'Acme', sans-serif;
+    display: flex;
+    font-size: 38px;
+    justify-content: center;
+}
+
+#intro .mbody{
+    display: inline;
+    max-width: 100%;
+    background-color: #7af1ab;
+}
+
+#intro .msg1{
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.mbody .empty1{
+    background-color: ghostwhite;
+    width:12%;
+}
+
+.mbody .empty2{
+    width: 16%;
+}
+
+.mbody .thing1{
+    /* display: inline; */
+    /* background-color: #00337C; */
+    width: 35%;
+}
+
+.thing1 h3{
+    font-size: 2.4rem;
+    padding: 8px 0;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+.thing2 h3{
+    font-size: 2.4rem;
+    padding: 8px 0;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+.msg1 .center1{
+    margin-top: 100px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.rside{
+    margin-left: 150px;
+}
+
+.thing1 h4{
+    margin-left: 72px;
+}
+
+.uni img{
+    border-radius: 30px;
+    height: 100%;
+    width: 280px;
+    margin-left: 300px;
+}
+
+.uni3 img{
+    margin-left: 170px;
+}
+
+.uni1 img{
+    height: 100%;
+    width:280px;
+}
+
+model-viewer{
+    height: 500px;
+    width:450px;
+    margin: 0;
+
+}
+
+.mbody{
+    display: flex;
+    /* background-color: #00337C; */
+}
+
+.mbody .left{
+    width: 50%;
+    background-color: #46dda6;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* background-color: black; */
+}
+
+#Scan .left h1{
+    margin: 90px 75px;
+    font-size: 75px;
+    font-family:'Acme', sans-serif; 
+    font-family: 'Delicious Handrawn', cursive; ;
+}
+input[type=file], select{
+    justify-content: center;
+    width: 57%;
+    padding: 15px 10px;
+    margin: 8px 100px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
