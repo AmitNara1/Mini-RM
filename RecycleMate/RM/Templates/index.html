@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div id = "Acc">
-                <button id = "Login" type="Login">Log in</button>
+                <button id = "Login" href = "#login" type="Login">Log in</button>
                 <!-- <button class = "Sign" type="Sign up">Sign Up</button> -->
                 
             </div>
@@ -48,15 +48,33 @@
             <div class="close">+</div>
             <h1>Recycle Mate</h1>
             <h2>Sign in</h2>
-            <h3>Don't have an account?<a href = "/Signup">SignUp</a></h3>
+             <!-- <h3>Don't have an account?<a href = "/Signup" id = "Signup">SignUp</a></h3>  -->
+            <h3>Don't have an account?<a href = "#" id = "Signup">SignUp</a></h3>
             <!-- <label for = "email">Enter your Email: </label> -->
-            <form action = "">
+            <form action = ""> 
             <input class = "email" type = "email" id = "email" name="email" placeholder="Email">
             <input class = "email" type="password" id = "password" name="password" placeholder="Password">
             <button class = "Submit" type="Submit">Submit</button>
             </form>
         </div>
-    </div>
+    </div> 
+
+    <div class="bg-modal1">
+        <div class="modal-content1">
+            <!-- <div class="close">+</div> -->
+            <h1>Recycle Mate</h1>
+            <h2>Sign Up</h2>
+            <!-- <h3>Don't have an account?<a href = "#login" class = "login1" id ="Login">Log in</a></h3> -->
+            <h3>Don't have an account?</h3><button id = "Login" href = "#" type="Login">Log in</button>
+            <!-- <label for = "email">Enter your Email: </label> -->
+            <form action = "">
+            <input class ="email" type="name" placeholder="Name">
+            <input class = "email" type = "email"  name="email" placeholder="Email">
+            <input class = "email" type="password" name="password" placeholder="Password">
+            <button class = "Submit" type="Submit">Submit</button>
+            </form>
+        </div>
+    </div> 
     <!-- <div class="log">
         <img src = "{%static "Images/bg1.jpg" %}" alt="logo" class="log"/>
     </div> -->
@@ -102,7 +120,7 @@
             <div>step3</div>
         </div>
     </section> -->
-    <section id = "intro">
+    <section id = "intro" class = "hidden">
         <div class = intro1>
             <h1>What we do</h1>
         </div>
@@ -158,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section id = "Scan" class = mbody>
+    <section id = "Scan" class = "mbody , hidden">
         <div class="left">
             <h1>GET YOUR ITEMS SCANNED IN SECONDS.</h1>
             <form action="">
@@ -170,11 +188,24 @@
             <model-viewer src="{% static "Images/trash.glb" %}" camera-controls auto-rotate disable-zoom></model-viewer>
         </div>
     </section>
-    <section id = "contact">
-
+    <section id = "contact" class = "hidden" >
+        <div class="cont">
+            <h1>Looking to talk!</h1> 
+        <div class="mainlast">
+            <form action="">
+                <input class = "emai" type = "emai" name="name" placeholder="Name">
+                <input class = "emai" type = "emai" name="email" placeholder="Email">
+                <textarea class="text" placeholder="Write something" style="width: 500px; height: 166px;"></textarea>
+                <button class = "Send" type="Send">Send</button>
+            </form>
+            <div class="img2">
+                <img src = "{%static "Images/5751.jpg" %}" alt="contact">
+            </div>
+        </div>
+        </div>
     </section>
-    <footer>
-
+    <footer class="foot">
+        All rights reserved! 2023
     </footer>
     {% load static %}
     <script type = "text/javascript" src ="{% static 'js/index.js' %}"></script>
